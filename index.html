@@ -7,10 +7,10 @@
   <body style='margin : 0 px; overflow: hidden;'>
     <a-scene stats embedded arjs='trackingMethod: best; debugUIEnabled: false'>
     <a-assets>
-      <a-entity  gltf-model = "url (https://github.com/Shinito9/Shinito9.fr/blob/master/doa5_lei_fang_circus/scene.gltf)" > </a-entity>
+      <a-asset-item id = "lei" src = "Shinito9.fr/doa5_lei_fang_circus/scene.gltf" > </ a-asset-item >
     </a-assets>
   	<a-marker preset="hiro">
-      <a-entity>
+      <a-entity gltf-model = "#lei" >
             <a-gltf-model position="0 1 0"></a-gltf-model>
           </a-entity>
       </a-entity>
